@@ -11,9 +11,9 @@ public class LoginTest {
 		System.setProperty("Webdriver.Chrome.Driver", "src\\main\\resources\\webDriverBinaries\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
-		// driver.findElement(By.id("email")).sendKeys("abcdefg@xyz.com");
-		// driver.findElement(By.id("pass")).sendKeys("12345");
-		// driver.findElement(By.xpath("//button[@type='submit']")).click();
+		driver.findElement(By.id("email")).sendKeys("abcdefg@xyz.com");
+		 driver.findElement(By.id("pass")).sendKeys("12345");
+		 driver.findElement(By.xpath("//button[@type='submit']")).click();
 		// String actual
 		// =driver.findElement(By.xpath("//div[@class='_9ay7']")).getText();
 		String actual = driver.getTitle();
